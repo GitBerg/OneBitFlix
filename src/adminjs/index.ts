@@ -1,3 +1,4 @@
+import { locale } from './locale';
 import { User } from './../models/User';
 import { adminJsResources } from './resources';
 import AdminJS from "adminjs";
@@ -32,7 +33,8 @@ export const adminJs = new AdminJS({
               hoverBg: '#151515',
           }
         }
-    }
+    },
+    locale
 })
 
 export const adminJsRouter = AdminJSExpress.buildAuthenticatedRouter(adminJs, {
