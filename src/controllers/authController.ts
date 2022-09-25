@@ -1,6 +1,4 @@
 import { Request, Response } from "express";
-import { isBuffer } from "util";
-import { User } from "../models";
 import { jwtService } from "../services/jwtService";
 import { userService } from "../services/UserService";
 
